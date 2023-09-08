@@ -1,0 +1,551 @@
+*{
+    margin: 0;
+    padding: 7px 25px 7px 25px;
+    font-family: 'Arial', sans-serif;
+    
+    
+}
+
+body{
+    min-height: 844px;
+    max-width: 390px;
+    flex-shrink: 0;
+    background:linear-gradient(180deg, #8FD9FF 0%, #425BB6 100%, #071D68 100%);
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+#temp {
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Inter;
+font-size: 65px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#maintitle {
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Inter;
+font-size: 25px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+#smallt {
+    color: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Inter;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+#city {
+    olor: #FFF;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+font-family: Inter;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+img {
+    width: 340px;
+}
+
+.flex-parent-element {
+    display: flex;
+    width: 0%;
+}
+
+.flex-child-element {
+    display: inline-block;
+    vertical-align: middle;
+    margin:1px;
+}
+
+.toggle-white {
+    top: 49px;
+    left: 198px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+
+.rain-rectangle {
+    top: 229px;
+    left: 25px;
+    width: 161px;
+    height: 161px;
+    position: absolute;
+    border-radius: 15px;
+}
+
+.sun-rectangle {
+    top: 229px;
+    left: 204px;
+    width: 161px;
+    height: 161px;
+    position: absolute;
+    border-radius: 15px;
+  }
+
+.map-rectangle {
+    top: 434px;
+    left: 25px;
+    width: 340px;
+    height: 201px;
+    position: absolute;
+    border-radius: 10%;
+}
+
+.forecast-rectangle {
+    top: 680px;
+    left: 25px;
+    width: 340px;
+    height: 164px;
+    position: absolute;
+    border-radius: 10px;
+  }
+
+  .forecast-text {
+    top: 643px;
+    left: 24px;
+    color: rgba(255, 255, 255, 1);
+    width: 314px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .maps-text {
+    top: 397px;
+    left: 26px;
+    color: rgba(255, 255, 255, 1);
+    width: 73px;
+    height: auto;
+    position: absolute;
+    font-size: 25px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .city-text {
+    top: 96px;
+    left: 109px;
+    color: rgba(255, 255, 255, 1);
+    width: 150px;
+    height: auto;
+    position: absolute;
+    font-size: 30px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+
+  .high-low-text {
+    top: 201px;
+    left: 68px;
+    color: rgba(255, 255, 255, 1);
+    width: 70px;
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.rise-text {
+    top: 202px;
+    left: 229px;
+    color: rgba(255, 255, 255, 1);
+    width: 47px;
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.set-text {
+    top: 202px;
+    left: 307px;
+    color: rgba(255, 255, 255, 1);
+    width: 64px;
+    height: auto;
+    position: absolute;
+    font-size: 12px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.main-temp-text {
+    top: 128px;
+    left: 56px;
+    color: rgba(255, 255, 255, 1);
+    width: 122px;
+    height: auto;
+    position: absolute;
+    font-size: 65px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.icon-weather {
+    top: 137px;
+    left: 243.887939453125px;
+    width: 84px;
+    height: 66px;
+    position: absolute;
+}
+
+.fahrenheit-text {
+    top: 50px;
+    left: 172px;
+    color: rgba(255, 255, 255, 1);
+    width: 73px;
+    height: auto;
+    position: absolute;
+    font-size: 20px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.orange-toggle {
+    top: 45px;
+    left: 153px;
+    width: 84px;
+    height: 39px;
+    position: absolute;
+}
+
+.new-forecast-rectangle {
+    top: 680px;
+    left: 25px;
+    width: 340px;
+    height: 164px;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.today-text {
+    top: 748px;
+    left: 18px;
+    color: rgba(255, 255, 255, 1);
+    width: 77px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.tuesday-text {
+    top: 797px;
+    left: 18px;
+    color: rgba(255, 255, 255, 1);
+    width: 72px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.thirty-percent-text {
+    top: 750px;
+    left: 275px;
+    color: rgba(255, 255, 255, 1);
+    width: 77px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.seventy-percent-text {
+    top: 797px;
+    left: 277px;
+    color: rgba(255, 255, 255, 1);
+    width: 72px;
+    height: auto;
+    position: absolute;
+    font-size: 23px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.temperature-icon-forecast {
+    top: 702px;
+    left: 107px;
+    width: 20.54166603088379px;
+    height: 20.25px;
+    display: flex;
+    opacity: 0.50;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+}
+
+.air-quality-forecast {
+    top: 705px;
+    left: 181px;
+    width: 20px;
+    height: 14px;
+    opacity: 0.50;
+    position: absolute;
+}
+
+.rain-icon-forecast {
+    top: 697px;
+    left: 251px;
+    width: 32px;
+    height: 30px;
+    position: absolute;
+}
+
+.rain-one {
+    top: 748px;
+    left: 178px;
+    width: 32px;
+    height: 30px;
+    position: absolute;
+}
+
+.rain-two {
+    top: 798px;
+    left: 178px;
+    width: 32px;
+    height: 30px;
+    position: absolute;
+}
+
+.sun-rise-icon {
+    top: 205px;
+    left: 213.3333740234375px;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+}
+
+.sun-set-icon {
+    top: 205px;
+    left: 292.3333740234375px;
+    width: 13px;
+    height: 13px;
+    position: absolute;
+}
+
+.week-toggle-text {
+    top: 649px;
+    left: 146px;
+    color: rgba(255, 255, 255, 1);
+    width: 35px;
+    height: auto;
+    position: absolute;
+    font-size: 15px;
+    font-style: Bold;
+    text-align: left;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.week-day-toggle {
+    top: 647px;
+    left: 132px;
+    width: 62px;
+    height: 29px;
+    position: absolute;
+}
+
+.week-day-button {
+    top: 649px;
+    left: 164px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+}
+
+.back-temp-icon-f {
+    top: 693px;
+    left: 90px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.back-air-quality-icon-f {
+    top: 693px;
+    left: 166px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.back-rain-icon-f {
+    top: 693px;
+    left: 241px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.first-line {
+    top: 742px;
+    left: 40px;
+    width: 312px;
+    height: 1px;
+    position: absolute;
+}
+
+.second-line {
+    top: 787px;
+    left: 40px;
+    width: 312px;
+    height: 1px;
+    position: absolute;
+}
+
+.third-line {
+    top: 836px;
+    left: 40px;
+    width: 312px;
+    height: 1px;
+    position: absolute;
+}
+
+.back-temp-icon-m {
+    top: 446px;
+    left: 90px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.back-air-quality-icon-m {
+    top: 446px;
+    left: 166px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.back-rain-icon-m{
+    top: 446px;
+    left: 242px;
+    width: 51px;
+    height: 39px;
+    position: absolute;
+    border-radius: 20px;
+}
+
+.temperature-icon-map {
+    top: 455px;
+    left: 107px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+}
+
+.air-quality-map {
+    top: 457px;
+    left: 181px;
+    width: 20px;
+    height: 14px;
+    position: absolute;
+}
+
+.rain-icon-map {
+    top: 450px;
+    left: 252px;
+    width: 32px;
+    height: 30px;
+    opacity: 0.50;
+    position: absolute;
+}
